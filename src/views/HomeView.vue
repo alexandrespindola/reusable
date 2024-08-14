@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="container">
+    <div class="auxbar">
+      <AuxBar />
+    </div>
+    <div class="main-content-conteiner">
+      <div class="menu">
+        <MenuSideBar />
+      </div>
+      <div class="main-content">
+      </div>
+    </div>
+
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+<script lang="ts" setup>
+import AuxBar from '@/components/AuxBar.vue';
+import MenuSideBar from '@/components/MenuSideBar.vue';
 
-export default defineComponent({
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-});
+
 </script>
