@@ -1,10 +1,10 @@
 <template>
   <MainLayout>
-    <template v-slot:main>
-      <h5>Main content</h5>
+    <template #main>
+      Contact
     </template>
-    <template v-slot:aux>
-      <h5>Aux content</h5>
+    <template #aux>
+      Aux content
     </template>
   </MainLayout>
 </template>

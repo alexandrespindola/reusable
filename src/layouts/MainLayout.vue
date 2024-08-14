@@ -8,16 +8,27 @@
                 <MenuSideBar />
             </div>
             <div class="main-content">
-                <slot name="main"></slot>
+                <h1>
+                    <slot name="main"></slot>
+                </h1>
             </div>
             <div class="aux-content">
-                <slot name="aux"></slot>
+                <h2>
+                    <slot name="aux"></slot>
+                </h2>
             </div>
         </div>
     </div>
+    <div @mousemove="useMouse">
+        <p>Mouse X: {{ mouseX }}</p>
+        <p>Mouse Y: {{ mouseY }}</p>
+      </div>
 </template>
 
 <script lang="ts" setup>
 import AuxBar from '@/components/AuxBar.vue';
 import MenuSideBar from '@/components/MenuSideBar.vue';
+import { useMouse } from '@/composables/useMouse';
+
+const { mouseX, mouseY } = useMouse();
 </script>

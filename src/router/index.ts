@@ -13,18 +13,18 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/about',
     name: 'about',
-    component: AboutView.vue
+    component: AboutView
   },
   {
     path: '/services',
     name: 'services',
-    component: ServicesView.vue
+    component: ServicesView
   },
   {
     path: '/contact',
     name: 'contact',
-    component: ContactView.vue
-  },
+    component: ContactView
+  }
 ]
 
 const router = createRouter({

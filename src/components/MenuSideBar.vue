@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Menu Sidebar</h1>
+        <h3>Menu Sidebar</h3>
     </div>
 </template>

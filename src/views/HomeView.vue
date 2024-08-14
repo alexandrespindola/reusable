@@ -1,14 +1,15 @@
 <template>
   <MainLayout>
-    <template v-slot:main>
-      <h5>Main content</h5>
+    <template #main>
+      Home
     </template>
-    <template v-slot:aux>
-      <h5>Aux content</h5>
+    <template #aux>
+      Aux content
     </template>
   </MainLayout>
 </template>
 
 <script lang="ts" setup>
 import MainLayout from '@/layouts/MainLayout.vue';
+
 </script>

@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Auxbar</h1>
+        <h3>Auxbar</h3>
     </div>
 </template>
