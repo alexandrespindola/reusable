@@ -1,22 +1,14 @@
 <template>
-  <div class="container">
-    <div class="auxbar">
-      <AuxBar />
-    </div>
-    <div class="main-content-conteiner">
-      <div class="menu">
-        <MenuSideBar />
-      </div>
-      <div class="main-content">
-      </div>
-    </div>
-
-  </div>
+  <MainLayout>
+    <template v-slot:main>
+      <h5>Main content</h5>
+    </template>
+    <template v-slot:aux>
+      <h5>Aux content</h5>
+    </template>
+  </MainLayout>
 </template>
 
 <script lang="ts" setup>
-import AuxBar from '@/components/AuxBar.vue';
-import MenuSideBar from '@/components/MenuSideBar.vue';
-
-
+import MainLayout from '@/layouts/MainLayout.vue';
 </script>

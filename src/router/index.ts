@@ -24,7 +24,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/contact',
     name: 'contact',
     component: ContactView.vue
-  }
+  },
 ]
 
 const router = createRouter({
